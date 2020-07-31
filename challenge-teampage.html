@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dev Challenges - Team Page</title>
+  </head>
+  <link
+    href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&family=Montserrat:wght@600&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    html,
+    body {
+      height: 100%;
+      padding: 0;
+      margin: 0;
+      display: block;
+      font-size: 20px;
+      color: #333333;
+      font-size: 15px;
+    }
+    h1 {
+      font-family: "PT Serif", serif;
+      margin-top: 10px;
+      font-size: 2.5rem;
+      letter-spacing: -0.1rem;
+    }
+    h3 {
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+    .mainContainer {
+      padding: 20px;
+    }
+
+    .topContainer {
+      margin-bottom: 40px;
+    }
+    .intro {
+      font-family: "Poppins", sans-serif;
+    }
+
+    .photoGp {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 80px;
+    }
+
+    .staff {
+      width: 46%;
+
+      position: relative;
+    }
+    .staff:nth-child(even) {
+      margin-left: 10px;
+      margin-top: 50px;
+    }
+    .staff:nth-child(odd) {
+      margin-right: 10px;
+    }
+    .staff img {
+      width: 85%;
+    }
+    .staff .jobTitle {
+      font-family: "PT Serif", serif;
+      text-transform: uppercase;
+      writing-mode: vertical-rl;
+      position: absolute;
+      font-size: 0.8rem;
+      right: 0px;
+    }
+
+    .staff .name {
+      font-family: "Poppins", sans-serif;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    .bottomContainer {
+      font-size: 0.5rem;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      text-align: center;
+      margin-top: auto;
+      padding-bottom: 1rem;
+    }
+
+    @media only screen and (min-width: 768px) {
+      .mainContainer {
+        margin: 0 auto;
+        max-width: 990px;
+        width: 70%;
+        min-width: 826px;
+      }
+      .topContainer {
+        margin-bottom: unset;
+        margin: 60px 0;
+        display: flex;
+      }
+      h1 {
+        width: 45%;
+        min-width: 45%;
+      }
+      .intro {
+        margin: 0 70px 0 40px;
+      }
+      .staff {
+        width: 33%;
+      }
+      .staff img {
+        width: 70%;
+      }
+      .staff .jobTitle {
+        right: 60px;
+      }
+      .staff .name {
+        font-size: 1rem;
+        margin-top: 10px;
+      }
+      .staff:nth-child(even) {
+        margin: unset;
+      }
+      .staff:nth-child(odd) {
+        margin: unset;
+      }
+
+      .staff:nth-child(3n + 2) {
+        margin-top: 70px;
+      }
+    }
+  </style>
+  <body>
+    <div class="mainContainer">
+      <div class="topContainer">
+        <h1>The creative crew</h1>
+        <div class="intro">
+          <h3>WHO WE ARE</h3>
+          <span>We are team of creatively diverse. driven. innovative individuals working in various locations from the world.</span>
+        </div>
+      </div>
+      <div class="photoGp">
+        <div class="staff">
+          <div class="jobTitle">Product Owner</div>
+          <img src="img/photo1.png" alt="photo1" />
+          <div class="name">Bill Mahoney</div>
+        </div>
+        <div class="staff">
+          <div class="jobTitle">Art Director</div>
+          <img src="img/photo2.png" alt="photo2" />
+          <div class="name">Saba Cabrera</div>
+        </div>
+        <div class="staff">
+          <div class="jobTitle">Tech Lead</div>
+          <img src="img/photo3.png" alt="photo3" />
+          <div class="name">Shae Le</div>
+        </div>
+        <div class="staff">
+          <div class="jobTitle">Ux Designer</div>
+          <img src="img/photo4.png" alt="photo4" />
+          <div class="name">Skylah Lu</div>
+        </div>
+        <div class="staff">
+          <div class="jobTitle">Developer</div>
+          <img src="img/photo5.png" alt="photo5" />
+          <div class="name">Griff Richards</div>
+        </div>
+        <div class="staff">
+          <div class="jobTitle">Developer</div>
+          <img src="img/photo6.png" alt="photo6" />
+          <div class="name">Stan John</div>
+        </div>
+      </div>
+      <div class="bottomContainer"><span>King Fung@DevChallenges.io</span></div>
+    </div>
+  </body>
+</html>
